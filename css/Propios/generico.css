@@ -1,0 +1,259 @@
+/* VARIABLES para la paleta de colores */
+:root {
+	--white: #ffffff;
+    --black: #333;
+    --gray:#ebebeb;
+    --gold: rgb(171, 136, 69);
+    ;
+	--box-shadow1:0px 0px 18px 2px rgba(10, 55, 90, 0.15);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../../fonts/Roboto-Regular.ttf);
+}
+
+/* Navbar SOLIDO en dispositivos pequeños (Degradado) */
+@media (min-width: 300px) and (max-width: 992px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #000000;
+        background: -webkit-linear-gradient(to left, #252525, #000000);
+        background: linear-gradient(to left, #252525, #000000);
+    }
+}
+
+/* Carousel FULLSCREEN en dispositivos pequeños */
+@media (max-width: 992px) {
+
+    .carousel, .img-car {
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center; 
+
+    }
+
+    .carousel-caption{
+        bottom: 20%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .logo-meta {
+        width: 300px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .logo-meta {
+        width: 200px;
+    }
+}
+
+footer {
+    margin: 2rem;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    color: white;
+    background-image: url(../../img/insumos/fondo_footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Color del Navbar (Degradado) */
+.top-nav-collapse{
+    background: #000000;
+    background: -webkit-linear-gradient(to left, #252525, #000000);
+    background: linear-gradient(to left, #252525, #000000);
+} 
+
+.navbar{
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link::after{
+    bottom: 0
+}
+
+.navbar-nav .nav-link:hover::after{
+    width: 100%;
+}
+
+.navbar-nav .nav-link:hover{
+  color: var(--gold) !important ;
+}
+
+.navbar-nav .nav-link{
+    color: white;
+}
+
+.navbar-nav .nav-link::after{
+  content: '';
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 0;
+  left: 0;
+  background-color: var(--gold);
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item .active{
+    border-top: 3px solid var(--gold) ;
+    color: var(--gold) !important ;
+}
+
+.fa-bars:hover{
+    color: var(--gold);
+    }
+
+.navbar-toggler-icon{
+    font-size: 2rem;
+}
+
+.navbar-brand{
+    width: 50%;
+}
+
+.fa-bars{
+    font-size: 180%;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover{
+    color: var(--gold);
+    font-size: 2rem;
+}
+
+
+.carousel-indicators .active {
+    background-color: var(--gold) !important ;
+    padding: 4px;
+    margin-top: -4px;
+}
+
+/* INICIO - Carousel de logos (Filiales) */
+.owl-dot{
+    display: inline-block;
+    height: 20px !important;
+    width: 20px !important;
+    background-color: #000 !important;
+    border-radius: 50%;
+    border-color: transparent;
+    margin: 0 5px;
+    margin-top: 2rem;
+}
+
+.owl-dots{
+    text-align: center;
+}
+
+.owl-dot.active{
+    background-color: var(--gold)!important;
+}
+/* FIN - Carousel de logos (Filiales) */
+
+.mask-gold-black{
+    background: rgb(171, 136, 69, 0.7);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(3, 3, 3, 0.6),rgb(171, 136, 69, 0.6));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(3, 3, 3, 0.6), rgb(171, 136, 69, 0.6)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+  }
+
+
+.text-obj{
+    margin-top: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.titulo-dorado {
+    color:var(--gold);
+}
+
+.link-footer:hover{
+    color: var(--gold) !important;
+}
+
+.filter{
+    filter: grayscale(40%);
+}
+
+.filter:hover{
+    filter: grayscale(0%);
+    padding: 6px;
+}
+
+.button{
+    position: relative;
+    padding: 1em 1.5em;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    margin: 1em 0.8em;
+  }
+
+  .full-screen{
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+}
+
+.btn-saber:hover{
+    margin-left: 2rem;
+    color: var(--gold) !important;
+    border-color: var(--gold) !important;
+
+}
+
+.btn-saber{
+    color: var(--gold) !important;
+    border-color: var(--gold) !important;
+    border-radius: 100px;
+    padding: .375rem 1.5rem;
+}
+
+.btn-saber-bg:hover{
+    background: #222 !important;
+    color: var(--gold) !important;
+    transition: all ease 300ms;
+}
+.btn-saber-bg{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: .8;
+    background: var(--gold) !important;
+    color: white !important;
+    letter-spacing: .3px;
+    border-radius: 100px;
+    padding: .6rem 1.5rem;
+}
+
+.btn-piezas{
+    border-radius: 100px;
+    padding: .375rem 1.5rem;
+}
+
+.btn-piezas:hover{
+    color: var(--gold) !important;
+    border-color: var(--gold) !important;
+    transition: ease 0.5s;
+}
+
+.hr-gold{
+    background-color:var(--gold);
+    height: 2px;
+    border-radius: 10px;
+
+}

@@ -1,0 +1,168 @@
+@import url(generico.css);
+
+li a{
+    color: white;
+} 
+
+li a:hover{
+    color:rgb(171, 136, 69)
+}
+
+li a:focus{
+    color:rgb(171, 136, 69);  
+}
+
+.img-nosotros{
+width: 90%;
+
+}  
+
+.obj-text{
+    background-color: rgba(0, 0, 0, 0.8);
+    right: 0%;
+}
+
+.row-obj{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.linea-vertical{
+    background-color: rgb(171, 136, 69);
+}
+
+    .img-prueba{
+        width: 50%;
+        height: auto;
+    }
+
+    .btn-piezas:hover{
+        padding: 1rem;
+    }
+
+    .menu{
+        color: rgb(171, 136, 69);
+        font-size: 2rem;
+    }
+  
+  .categorias{
+    box-shadow: none;
+    color: white;
+  }
+
+  .btn-link:hover, .btn-link:focus{
+    text-decoration: none;
+  }
+
+    .categorias::after, .categorias::before{
+      content: '';
+      display: block;
+      position: absolute;
+      width: 0%;
+      height: 0%;
+      border: 2px solid;
+      transition: all 0.6s ease;
+      border-radius: 2px;
+      opacity: 0;
+  }
+
+    .categorias::after{
+      bottom: 0;
+      right: 0;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      border-bottom-color: rgb(171, 136, 69);
+      border-right-color: rgb(171, 136, 69);
+}
+
+    .categorias::before{
+      top: 0;
+      left: 0;
+      border-bottom-color: transparent;
+      border-right-color: transparent;
+      border-top-color: rgb(171, 136, 69);
+      
+      /* color logo paleta */
+      border-left-color: rgb(171, 136, 69); 
+}
+.categorias:hover, .categorias:focus{
+    color: rgb(171, 136, 69);
+}
+
+    .categorias:hover:after, .categorias:focus:after,
+    .categorias:hover:before, .categorias:focus:before{
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+    }
+
+.parallax-obj{
+    background: url(../../img/insumos/piezas.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.parallax-pro{
+    background: url(../../img/insumos/banner_principal.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.col-img-procesos{
+padding: 0px;
+background-color: rgb(171, 136, 69);
+/* object-fit: cover; */
+}
+
+.text-acu{
+    font-size: small;
+}
+
+.img-area{
+    width: 300px; 
+    height: 250px; 
+    position:relative;
+}
+
+.img-area img{
+    padding: 15px;
+    width:300px;
+    height: auto;  
+    text-align:center;  
+    border-width:2px; 
+    top:50%; 
+    margin-top:-52px;
+    left: 5%; 
+    margin-left:-52px;
+    position:absolute;  
+}
+
+.transfer{
+    padding-top: 0;
+}
+
+.text-cat{
+    color: white !important;
+}
+
+.carta-procesos{
+    box-shadow: 0px 3px 25px 0px rgba(10, 55, 90, 0.2);
+    position: absolute;
+    left:100;
+}
+
+.img-proc{
+    width: 250px;
+    box-shadow: 0px 3px 20px 0px rgba(10, 55, 90, 0.2);
+}
+
+.tranf{
+    margin-top: -100px !important;
+    width: 90% !important;
+}
+
+.vel{
+    width: 200px;
+    margin-top: -130px !important;
+}

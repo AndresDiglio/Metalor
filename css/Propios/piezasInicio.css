@@ -1,0 +1,54 @@
+@import url(generico.css);
+
+/*#sidebar-container{
+	min-height: 100vh;
+}*/
+
+body, .list-group-item{
+	background-color: #eee;
+}
+
+#sidebar-contanier .logo{
+	padding: .875rem 1.25rem;
+	font-size: 1.2rem;
+}
+
+#sidebar-container .menu{
+	width: 18rem;
+}
+
+.bg-light{
+background-color: #f8f9fa!important;
+}
+
+.colecciones img{
+	width: 200px;
+}
+
+.colecciones .row{
+	height: 250px;
+}
+
+.breadcrumb{
+	background-color: transparent!important;
+}
+
+#content-wrapper{
+	padding-top: 100px;
+}
+
+.navbar-dark{
+	background: #000000;
+    background: -webkit-linear-gradient(to left, #252525, #000000);
+    background: linear-gradient(to left, #252525, #000000);
+}
+
+.descripcion{
+	width: 50%;
+}
+
+.carousel-caption{
+	left: 10%;
+	right: 50%;
+	top: 30%;
+}
