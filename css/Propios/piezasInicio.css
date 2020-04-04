@@ -115,3 +115,28 @@ background-color: #f8f9fa!important;
 	margin-left: 60px;
 	color: var(--gold);
 }
+
+.banner-pendiente{
+	background-color: #111;
+	width: 100;
+	height: 300px;
+	color: #fff;
+
+}
+
+.content-center h1{
+	margin: auto
+	font-size: 24px;
+	text-align: center;
+	color: var(--gold);
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+
+}
+
+.content-center h5{
+	margin: auto;
+	text-align: center;
+	color: #fff
+}
